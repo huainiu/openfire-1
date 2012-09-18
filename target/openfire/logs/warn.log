@@ -1,4 +1,149 @@
-2012.09.17 07:32:55 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2012.09.17 07:32:55 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-2012.09.17 07:34:54 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '25'
-2012.09.17 20:05:18 org.jivesoftware.util.log.util.CommonsLogFactory - Shutdown waited for 1 milliseconds for all the connections to become inactive but the active count is still 1. Shutting down anyway.
+2012.09.18 12:19:46 org.jivesoftware.admin.LoginLimitManager - Failed admin console login attempt by admin from 127.0.0.1
+2012.09.18 12:20:02 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '24'
+2012.09.18 12:20:02 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '21'
+2012.09.18 12:20:03 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '20'
+2012.09.18 12:23:48 org.jivesoftware.util.log.util.JettyLog - /http-bind/
+java.lang.IllegalStateException: IDLE,initial
+	at org.eclipse.jetty.server.AsyncContinuation.suspend(AsyncContinuation.java:280)
+	at org.eclipse.jetty.server.AsyncContinuation.suspend(AsyncContinuation.java:776)
+	at org.jivesoftware.openfire.http.HttpConnection.waitForResponse(HttpConnection.java:205)
+	at org.jivesoftware.openfire.http.HttpConnection.getResponse(HttpConnection.java:147)
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:589)
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:573)
+	at org.jivesoftware.openfire.http.HttpBindServlet.isContinuation(HttpBindServlet.java:181)
+	at org.jivesoftware.openfire.http.HttpBindServlet.doPost(HttpBindServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:530)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1216)
+	at org.eclipse.jetty.continuation.ContinuationFilter.doFilter(ContinuationFilter.java:110)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1187)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:425)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:931)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:362)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:867)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:183)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handleAsync(Server.java:377)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:564)
+	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:390)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:462)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:436)
+	at java.lang.Thread.run(Thread.java:662)
+2012.09.18 12:23:52 org.jivesoftware.openfire.http.HttpSession - Request 4247380740 > 4247380739, ending session.
+2012.09.18 12:25:53 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '50'
+2012.09.18 12:31:08 org.jivesoftware.util.log.util.CommonsLogFactory - #0002 was active for 315027 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-7', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 12:49:25 org.jivesoftware.util.log.util.JettyLog - /http-bind/
+java.lang.IllegalStateException: IDLE,initial
+	at org.eclipse.jetty.server.AsyncContinuation.suspend(AsyncContinuation.java:280)
+	at org.eclipse.jetty.server.AsyncContinuation.suspend(AsyncContinuation.java:776)
+	at org.jivesoftware.openfire.http.HttpConnection.waitForResponse(HttpConnection.java:205)
+	at org.jivesoftware.openfire.http.HttpConnection.getResponse(HttpConnection.java:147)
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:589)
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:573)
+	at org.jivesoftware.openfire.http.HttpBindServlet.isContinuation(HttpBindServlet.java:181)
+	at org.jivesoftware.openfire.http.HttpBindServlet.doPost(HttpBindServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:530)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1216)
+	at org.eclipse.jetty.continuation.ContinuationFilter.doFilter(ContinuationFilter.java:110)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1187)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:425)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:931)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:362)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:867)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:183)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handleAsync(Server.java:377)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:564)
+	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:390)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:462)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:436)
+	at java.lang.Thread.run(Thread.java:662)
+2012.09.18 12:50:07 org.jivesoftware.util.log.util.JettyLog - /http-bind/
+java.lang.IllegalStateException: IDLE,initial
+	at org.eclipse.jetty.server.AsyncContinuation.suspend(AsyncContinuation.java:280)
+	at org.eclipse.jetty.server.AsyncContinuation.suspend(AsyncContinuation.java:776)
+	at org.jivesoftware.openfire.http.HttpConnection.waitForResponse(HttpConnection.java:205)
+	at org.jivesoftware.openfire.http.HttpConnection.getResponse(HttpConnection.java:147)
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:589)
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:573)
+	at org.jivesoftware.openfire.http.HttpBindServlet.isContinuation(HttpBindServlet.java:181)
+	at org.jivesoftware.openfire.http.HttpBindServlet.doPost(HttpBindServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:530)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1216)
+	at org.eclipse.jetty.continuation.ContinuationFilter.doFilter(ContinuationFilter.java:110)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1187)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:425)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:931)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:362)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:867)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:183)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handleAsync(Server.java:377)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:564)
+	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:390)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:462)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:436)
+	at java.lang.Thread.run(Thread.java:662)
+2012.09.18 12:50:10 org.jivesoftware.openfire.http.HttpBindServlet - Client provided invalid session: 6b344673. [127.0.0.1]
+2012.09.18 12:51:32 org.jivesoftware.util.log.util.JettyLog - /http-bind/
+java.lang.IllegalStateException: COMPLETE,initial
+	at org.eclipse.jetty.server.AsyncContinuation.suspend(AsyncContinuation.java:280)
+	at org.eclipse.jetty.server.AsyncContinuation.suspend(AsyncContinuation.java:776)
+	at org.jivesoftware.openfire.http.HttpConnection.waitForResponse(HttpConnection.java:205)
+	at org.jivesoftware.openfire.http.HttpConnection.getResponse(HttpConnection.java:147)
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:589)
+	at org.jivesoftware.openfire.http.HttpSession.getResponse(HttpSession.java:573)
+	at org.jivesoftware.openfire.http.HttpBindServlet.isContinuation(HttpBindServlet.java:181)
+	at org.jivesoftware.openfire.http.HttpBindServlet.doPost(HttpBindServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:530)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1216)
+	at org.eclipse.jetty.continuation.ContinuationFilter.doFilter(ContinuationFilter.java:110)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1187)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:425)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:931)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:362)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:867)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:183)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handleAsync(Server.java:377)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:564)
+	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:390)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:462)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:436)
+	at java.lang.Thread.run(Thread.java:662)
+2012.09.18 12:51:34 org.jivesoftware.openfire.http.HttpBindServlet - Client provided invalid session: f56597a3. [127.0.0.1]
+2012.09.18 12:52:14 org.jivesoftware.openfire.http.HttpSession - Packets could not be found for session bfe880fa cannot be delivered to client
+2012.09.18 12:55:12 org.jivesoftware.openfire.http.HttpBindServlet - Client provided invalid session: 8d62d1c4. [127.0.0.1]
+2012.09.18 13:01:40 org.jivesoftware.util.log.util.CommonsLogFactory - #0006 was active for 307464 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-5', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 13:14:23 org.jivesoftware.openfire.http.HttpBindServlet - Client provided invalid session: dd19932c. [127.0.0.1]
+2012.09.18 13:23:10 org.jivesoftware.util.log.util.CommonsLogFactory - #0007 was active for 312221 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-12', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 13:44:40 org.jivesoftware.util.log.util.CommonsLogFactory - #0008 was active for 301061 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-13', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 13:49:10 org.jivesoftware.util.log.util.CommonsLogFactory - #0001 was active for 301440 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 15:30:11 org.jivesoftware.util.log.util.CommonsLogFactory - #0009 was active for 309109 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-10', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 15:33:11 org.jivesoftware.util.log.util.CommonsLogFactory - #0010 was active for 321884 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-4', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 15:34:11 org.jivesoftware.util.log.util.CommonsLogFactory - #0005 was active for 327423 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-5', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 15:39:11 org.jivesoftware.util.log.util.CommonsLogFactory - #0011 was active for 314863 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-8', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 15:49:11 org.jivesoftware.util.log.util.CommonsLogFactory - #0014 was active for 304101 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-11', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 15:50:41 org.jivesoftware.util.log.util.CommonsLogFactory - #0012 was active for 309387 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-13', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 16:04:42 org.jivesoftware.util.log.util.CommonsLogFactory - #0003 was active for 318348 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-1', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 16:06:42 org.jivesoftware.util.log.util.CommonsLogFactory - #0015 was active for 316758 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-3', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 16:12:12 org.jivesoftware.util.log.util.CommonsLogFactory - #0018 was active for 314473 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-5', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 16:16:42 org.jivesoftware.util.log.util.CommonsLogFactory - #0016 was active for 321436 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-12', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 16:17:42 org.jivesoftware.util.log.util.CommonsLogFactory - #0004 was active for 301590 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-14', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 16:17:42 org.jivesoftware.util.log.util.CommonsLogFactory - #0017 was active for 329878 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-13', but the last SQL it performed is unknown because the trace property is not enabled.
+2012.09.18 16:25:12 org.jivesoftware.util.log.util.CommonsLogFactory - #0022 was active for 306250 milliseconds and has been removed automaticaly. The Thread responsible was named 'pool-9-thread-16', but the last SQL it performed is unknown because the trace property is not enabled.

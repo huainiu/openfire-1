@@ -124,14 +124,14 @@ public class MessageInterceptor implements PacketInterceptor {
             //Ken's bidLead
             try
             {
-                URL url = new URL("http://verysubtle.org:8080/bidLead/makeLead");
+                URL url = new URL("http://localhost:8080/bidLead/makeLead");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setDoOutput(true);
                 conn.setRequestMethod("POST");
                 conn.setRequestProperty("Content-Type", "text/plain");
 
                 String data = vehicleId+","+to+","+from+","+message.getBody();
-                logger("Posting "+data+"to: http://verysubtle.org:8080/bidLead/makeLead");
+                logger("Posting "+data+"to: http://localhost:8080/bidLead/makeLead");
                 OutputStream os = conn.getOutputStream();
                 os.write(data.getBytes());
                 os.flush();
