@@ -1,0 +1,4 @@
+2012.09.17 07:32:55 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2012.09.17 07:32:55 org.jivesoftware.util.log.util.CommonsLogFactory - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+2012.09.17 07:34:54 org.jivesoftware.database.SequenceManager - Autocreating jiveID row for type '25'
+2012.09.17 20:05:18 org.jivesoftware.util.log.util.CommonsLogFactory - Shutdown waited for 1 milliseconds for all the connections to become inactive but the active count is still 1. Shutting down anyway.
